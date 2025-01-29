@@ -12,4 +12,4 @@ FROM quay.io/keycloak/keycloak:latest
 EXPOSE 8080
 
 # Start Keycloak in production mode
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start"]
