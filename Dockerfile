@@ -19,6 +19,8 @@ EXPOSE 8080
 
 # ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start --optimized --hostname-strict false --http-enabled true --hostname-strict-https false"]
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+# ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
 
-CMD ["start-dev"]
+# CMD ["start-dev"]
+
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start"]
