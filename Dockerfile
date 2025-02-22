@@ -17,8 +17,8 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 EXPOSE 8080
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized", "--hostname-strict", "false", "--http-enabled", "true"]
+# ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized", "--hostname-strict", "false", "--http-enabled", "true"]
 
-# ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start"]
 
 # CMD ["start-dev"]
